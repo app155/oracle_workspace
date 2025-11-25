@@ -227,14 +227,6 @@ select * from user_cons_columns where table_name = 'EMP04';
 insert into emp04 values (7499, 'allen', 'salesman', 30);
 insert into emp04 values (null, 'ones', 'manager', 20);
 
-/*
-    참조 무결성 제약조건
-        - 두 테이블 사이(사원, 부서 테이블)의 주종관계에서 성립.
-        - 부서 -> 소속 -> 사원
-        - 소속이라는 관계는 두 테이블 간 참조무결성 개념을 포함한 외래키 제약조건 명시해야만 설정됨.
-        - 자식인 사원테이블의 부서번호 컬럼에 부모인 부서테이블의 부서번호가 부모키로 설정 => 외래키 제약조건.
-        - 부모키가 되기 위한 컬럼은 반드시 부모의 기본키나 유일키로 설정되어야 함.
-*/
 
 
 
